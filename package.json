@@ -1,0 +1,20 @@
+{
+  "name": "codefactory-api",
+  "version": "1.0.0",
+  "description": "API REST da CodeFactory Solutions com pipeline CI/CD e Docker",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest --detectOpenHandles --forceExit"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
