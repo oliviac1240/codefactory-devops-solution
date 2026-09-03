@@ -14,7 +14,11 @@ app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'UP',
     timestamp: new Date().toISOString(),
+<<<<<<< HEAD
     service: 'CodeFactory Solutions - Branch Develop'
+=======
+    service: 'CodeFactory Solutions - Branch Feature'
+>>>>>>> feature/health-adjust
   });
 });
 
