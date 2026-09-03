@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const API_VERSION = '1.0.0';
 
 app.use(express.json());
 
@@ -13,6 +14,7 @@ const projects = [
 app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'UP',
+    version: API_VERSION,
     timestamp: new Date().toISOString(),
     service: 'CodeFactory Solutions Core API'
   });
